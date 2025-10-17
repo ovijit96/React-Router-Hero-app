@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/icons/focus-timer.jpg",
+    "title": "Focus Timer",
+    "companyName": "ZenWorks",
+    "description": "A minimal Pomodoro timer to help you stay focused and manage your work sessions efficiently.",
+    "size": 18,
+    "reviews": 12743,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 230 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 8943 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/assets/icons/habit-spark.png",
+    "title": "Habit Spark",
+    "companyName": "GrowDaily",
+    "description": "Build lasting habits through streaks, reminders, and daily motivation tracking.",
+    "size": 25,
+    "reviews": 21432,
+    "ratingAvg": 4.8,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 1150 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 14622 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/assets/icons/fittrack.png",
+    "title": "FitTrack Pro",
+    "companyName": "Active Labs",
+    "description": "Monitor your workouts, calories, and fitness goals with AI-based suggestions.",
+    "size": 42,
+    "reviews": 9653,
+    "ratingAvg": 4.4,
+    "downloads": 940000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 1210 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 4513 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/assets/icons/taskly.png",
+    "title": "Taskly",
+    "companyName": "FlowTech",
+    "description": "Smart to-do list and project planner for teams and individuals.",
+    "size": 19,
+    "reviews": 18432,
+    "ratingAvg": 4.7,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 580 },
+      { "name": "3 star", "count": 1330 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 11902 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "/assets/icons/music-wave.png",
+    "title": "MusicWave",
+    "companyName": "Pulse Studios",
+    "description": "Stream and download millions of songs with personalized playlists.",
+    "size": 56,
+    "reviews": 50983,
+    "ratingAvg": 4.3,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 2350 },
+      { "name": "2 star", "count": 3140 },
+      { "name": "3 star", "count": 8900 },
+      { "name": "4 star", "count": 16000 },
+      { "name": "5 star", "count": 20593 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "/assets/icons/readly.png",
+    "title": "Readly",
+    "companyName": "BookSmart",
+    "description": "Digital library offering thousands of e-books and magazines at your fingertips.",
+    "size": 38,
+    "reviews": 23412,
+    "ratingAvg": 4.5,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 870 },
+      { "name": "3 star", "count": 2450 },
+      { "name": "4 star", "count": 7400 },
+      { "name": "5 star", "count": 12172 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "/assets/icons/weatherly.png",
+    "title": "Weatherly",
+    "companyName": "SkyTech",
+    "description": "Accurate 7-day forecasts and live radar powered by AI climate models.",
+    "size": 30,
+    "reviews": 18210,
+    "ratingAvg": 4.2,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 980 },
+      { "name": "2 star", "count": 1230 },
+      { "name": "3 star", "count": 3120 },
+      { "name": "4 star", "count": 6500 },
+      { "name": "5 star", "count": 8380 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "/assets/icons/notepadx.png",
+    "title": "NotePad X",
+    "companyName": "Productive Minds",
+    "description": "Simple, lightweight, and secure note-taking app with cloud sync.",
+    "size": 12,
+    "reviews": 7450,
+    "ratingAvg": 4.8,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 430 },
+      { "name": "4 star", "count": 1250 },
+      { "name": "5 star", "count": 5550 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "/assets/icons/travelgo.png",
+    "title": "TravelGo",
+    "companyName": "Nomad Co.",
+    "description": "Find and book flights, hotels, and experiences at the best prices worldwide.",
+    "size": 60,
+    "reviews": 32100,
+    "ratingAvg": 4.6,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 star", "count": 820 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 9100 },
+      { "name": "5 star", "count": 18580 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "/assets/icons/foodmate.png",
+    "title": "FoodMate",
+    "companyName": "QuickEats",
+    "description": "Discover restaurants, order food online, and track deliveries in real time.",
+    "size": 44,
+    "reviews": 39821,
+    "ratingAvg": 4.4,
+    "downloads": 6300000,
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 3050 },
+      { "name": "3 star", "count": 6420 },
+      { "name": "4 star", "count": 10400 },
+      { "name": "5 star", "count": 17851 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "/assets/icons/chatzen.png",
+    "title": "ChatZen",
+    "companyName": "Techverse",
+    "description": "A next-generation AI chat assistant with voice and translation support.",
+    "size": 50,
+    "reviews": 52500,
+    "ratingAvg": 4.9,
+    "downloads": 8200000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1420 },
+      { "name": "4 star", "count": 6800 },
+      { "name": "5 star", "count": 43500 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "/assets/icons/photofy.png",
+    "title": "Photofy",
+    "companyName": "Creative Studio",
+    "description": "Edit photos, add filters, and create stunning social media posts.",
+    "size": 48,
+    "reviews": 35670,
+    "ratingAvg": 4.3,
+    "downloads": 5400000,
+    "ratings": [
+      { "name": "1 star", "count": 1680 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 4120 },
+      { "name": "4 star", "count": 10300 },
+      { "name": "5 star", "count": 17650 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "/assets/icons/langmate.png",
+    "title": "LangMate",
+    "companyName": "EduGlobal",
+    "description": "Learn new languages through daily challenges and real conversations.",
+    "size": 36,
+    "reviews": 12800,
+    "ratingAvg": 4.7,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 910 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7760 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "/assets/icons/shoply.png",
+    "title": "Shoply",
+    "companyName": "RetailWave",
+    "description": "Smart shopping assistant for deals, coupons, and product comparison.",
+    "size": 33,
+    "reviews": 24300,
+    "ratingAvg": 4.2,
+    "downloads": 3900000,
+    "ratings": [
+      { "name": "1 star", "count": 1120 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 3800 },
+      { "name": "4 star", "count": 8100 },
+      { "name": "5 star", "count": 10580 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "/assets/icons/mindly.png",
+    "title": "Mindly",
+    "companyName": "CalmTech",
+    "description": "Meditation and mindfulness app to reduce stress and improve sleep.",
+    "size": 29,
+    "reviews": 18700,
+    "ratingAvg": 4.9,
+    "downloads": 3600000,
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 210 },
+      { "name": "3 star", "count": 740 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 14620 }
+    ]
+  }
+]
