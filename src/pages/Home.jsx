@@ -40,19 +40,25 @@ export default function Home() {
         {/* app and google play btn*/}
         <div className="flex justify-center gap-3 mb-10 flex-wrap">
           <a
-            href="#"
-            className="flex items-center gap-2 border border-gray-300 bg-white rounded-lg px-3 py-2 hover:bg-gray-50 transition"
-          >
-            <img src="/assets/googleplay-icon.png" alt="" className="h-5 w-5" />
-            <span className="text-sm sm:text-base">Google Play</span>
-          </a>
+  href="https://play.google.com/store/apps"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 border border-gray-300 bg-white rounded-lg px-3 py-2 hover:bg-gray-50 transition"
+>
+  <img src="/assets/google-play-icon.png" alt="Google Play" className="h-5 w-5" />
+  <span className="text-sm sm:text-base">Google Play</span>
+</a>
+
           <a
-            href="#"
-            className="flex items-center gap-2 border border-gray-300 bg-white rounded-lg px-3 py-2 hover:bg-gray-50 transition"
-          >
-            <img src="/assets/appstore.png" alt="" className="h-5 w-5" />
-            <span className="text-sm sm:text-base">App Store</span>
-          </a>
+  href="https://www.apple.com/app-store/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 border border-gray-300 bg-white rounded-lg px-3 py-2 hover:bg-gray-50 transition"
+>
+  <img src="/assets/app-store-icon.png" alt="App Store" className="h-5 w-5" />
+  <span className="text-sm sm:text-base">App Store</span>
+</a>
+
         </div>
 
         {/* hero image */}
