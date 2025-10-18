@@ -1,4 +1,3 @@
-// src/pages/AppDetails.jsx
 import React, { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import {
@@ -13,18 +12,33 @@ import {
 
 export default function AppDetails() {
   const { id } = useParams();
+
   const [app, setApp] = useState(null);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState(null);
 
-  // install state (remember per app via localStorage)
+  // per-app legacy or compect
   const storageKey = `installed_${id}`;
   const [installed, setInstalled] = useState(
     () => localStorage.getItem(storageKey) === "1"
   );
   const [toast, setToast] = useState(false);
 
+  // installapps list
+  const LS_KEY_LIST = "installedApps";
+  const getInstalledList = () => {
+    try {
+      const raw = localStorage.getItem(LS_KEY_LIST);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  };
+  const setInstalledList = (arr) =>
+    localStorage.setItem(LS_KEY_LIST, JSON.stringify(arr));
+
   useEffect(() => {
+    setLoading(true);
     fetch("/data/trending.json")
       .then((r) => {
         if (!r.ok) throw new Error("Failed to load trending.json");
@@ -39,8 +53,18 @@ export default function AppDetails() {
   }, [id]);
 
   const handleInstall = () => {
+    // legacy flag
     setInstalled(true);
     localStorage.setItem(storageKey, "1");
+
+    //  unified list of ids
+    const list = getInstalledList();
+    if (!list.includes(String(id))) {
+      list.push(String(id));
+      setInstalledList(list);
+    }
+
+    // toast
     setToast(true);
     setTimeout(() => setToast(false), 1800);
   };
@@ -52,55 +76,83 @@ export default function AppDetails() {
     return String(n ?? 0);
   };
 
-  // chart data: sort 5 → 1
+  // chart data: sort 5 star to 1 star
   const chartData = useMemo(() => {
     if (!app?.ratings) return [];
     return [...app.ratings]
       .map((r) => ({
-        name: r.name, // "5 star"
+        name: r.name,
         star: parseInt(String(r.name).trim(), 10) || 0,
         count: Number(r.count) || 0,
       }))
       .sort((a, b) => b.star - a.star);
   }, [app]);
 
+  // ui stats
   if (loading) {
     return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-slate-600">
-        Loading…
-      </div>
-    );
-  }
-  if (err) {
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-red-600">
-        Error: {err}
-      </div>
-    );
-  }
-  if (!app) {
-    return (
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <p className="text-slate-600 mb-4">App not found.</p>
-        <Link
-          to="/apps"
-          className="inline-block bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700"
-        >
-          Back to Apps
-        </Link>
-      </div>
+      <main className="min-h-[60vh] bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex items-center justify-center">
+          <div className="bg-white border border-slate-200 rounded-xl px-4 py-3 shadow-sm flex items-center gap-3">
+            <span className="h-5 w-5 rounded-full border-2 border-slate-300 border-t-indigo-600 animate-spin" />
+            <span className="text-sm text-slate-700">Loading…</span>
+          </div>
+        </div>
+      </main>
     );
   }
 
+  if (err) {
+    return (
+      <main className="min-h-[60vh] bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <p className="text-red-600 font-medium mb-4">Error: {err}</p>
+          <Link
+            to="/apps"
+            className="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm hover:bg-indigo-700 transition"
+          >
+            Back to Apps
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  if (!app) {
+    return (
+      <main className="min-h-[60vh] bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <div className="mx-auto w-full max-w-[420px]">
+            <img
+              src="/assets/404.png"
+              alt="Not found"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-6">
+            App not found!
+          </h2>
+          <p className="text-slate-500 mt-1 mb-6">
+            The app you are trying to view is not available.
+          </p>
+          <Link
+            to="/apps"
+            className="inline-block bg-indigo-600 text-white px-5 py-2 rounded-lg text-sm hover:bg-indigo-700 transition"
+          >
+            Back to Apps
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
+  // main viewpoint
   return (
     <section className="bg-slate-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* back link */}
         <div className="mb-4">
-          <Link
-            to="/apps"
-            className="text-indigo-600 hover:underline text-sm"
-          >
+          <Link to="/apps" className="text-indigo-600 hover:underline text-sm">
             ← Back to Apps
           </Link>
         </div>
@@ -133,7 +185,7 @@ export default function AppDetails() {
                 <span className="text-indigo-600">{app.companyName}</span>
               </p>
 
-              {/* stats row */}
+              {/* stats */}
               <div className="mt-4 grid grid-cols-3 gap-4 max-w-lg text-center">
                 <div className="rounded-lg bg-emerald-50 p-3">
                   <p className="text-xs text-emerald-700">Downloads</p>
@@ -173,7 +225,7 @@ export default function AppDetails() {
           </div>
         </div>
 
-        {/* chart */}
+        {/* ratings chart */}
         <div className="mt-8 bg-white rounded-2xl border border-slate-200 p-5 md:p-6">
           <h2 className="text-lg font-semibold mb-4">Ratings</h2>
           <div className="h-64 w-full">
@@ -209,8 +261,7 @@ export default function AppDetails() {
             ))
           ) : (
             <p className="text-slate-700 leading-7">
-              {app.description ||
-                "No description provided for this app."}
+              {app.description || "No description provided for this app."}
             </p>
           )}
         </div>

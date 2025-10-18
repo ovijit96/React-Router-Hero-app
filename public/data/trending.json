@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/assets/icons/focus-timer.jpg",
+    "image": "/assets/demo-app (1).webp",
     "title": "Focus Timer",
     "companyName": "ZenWorks",
     "description": "A minimal Pomodoro timer to help you stay focused and manage your work sessions efficiently.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "image": "/assets/icons/habit-spark.png",
+    "image": "/assets/demo-app (2).webp",
     "title": "Habit Spark",
     "companyName": "GrowDaily",
     "description": "Build lasting habits through streaks, reminders, and daily motivation tracking.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "image": "/assets/icons/fittrack.png",
+    "image": "/assets/demo-app (3).webp",
     "title": "FitTrack Pro",
     "companyName": "Active Labs",
     "description": "Monitor your workouts, calories, and fitness goals with AI-based suggestions.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 4,
-    "image": "/assets/icons/taskly.png",
+    "image": "/assets/demo-app (4).webp",
     "title": "Taskly",
     "companyName": "FlowTech",
     "description": "Smart to-do list and project planner for teams and individuals.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 5,
-    "image": "/assets/icons/music-wave.png",
+    "image": "/assets/demo-app (5).webp",
     "title": "MusicWave",
     "companyName": "Pulse Studios",
     "description": "Stream and download millions of songs with personalized playlists.",
@@ -91,7 +91,7 @@
   },
   {
     "id": 6,
-    "image": "/assets/icons/readly.png",
+    "image": "/assets/demo-app (6).webp",
     "title": "Readly",
     "companyName": "BookSmart",
     "description": "Digital library offering thousands of e-books and magazines at your fingertips.",
@@ -109,7 +109,7 @@
   },
   {
     "id": 7,
-    "image": "/assets/icons/weatherly.png",
+    "image": "/assets/demo-app (1).webp",
     "title": "Weatherly",
     "companyName": "SkyTech",
     "description": "Accurate 7-day forecasts and live radar powered by AI climate models.",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "image": "/assets/icons/notepadx.png",
+    "image": "/assets/demo-app (2).webp",
     "title": "NotePad X",
     "companyName": "Productive Minds",
     "description": "Simple, lightweight, and secure note-taking app with cloud sync.",
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "image": "/assets/icons/travelgo.png",
+    "image": "/assets/demo-app (3).webp",
     "title": "TravelGo",
     "companyName": "Nomad Co.",
     "description": "Find and book flights, hotels, and experiences at the best prices worldwide.",
@@ -163,7 +163,7 @@
   },
   {
     "id": 10,
-    "image": "/assets/icons/foodmate.png",
+    "image": "/assets/demo-app (4).webp",
     "title": "FoodMate",
     "companyName": "QuickEats",
     "description": "Discover restaurants, order food online, and track deliveries in real time.",
@@ -181,7 +181,7 @@
   },
   {
     "id": 11,
-    "image": "/assets/icons/chatzen.png",
+    "image": "/assets/demo-app (5).webp",
     "title": "ChatZen",
     "companyName": "Techverse",
     "description": "A next-generation AI chat assistant with voice and translation support.",
@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "image": "/assets/icons/photofy.png",
+    "image": "/assets/demo-app (3).webp",
     "title": "Photofy",
     "companyName": "Creative Studio",
     "description": "Edit photos, add filters, and create stunning social media posts.",
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "image": "/assets/icons/langmate.png",
+    "image": "/assets/demo-app (4).webp",
     "title": "LangMate",
     "companyName": "EduGlobal",
     "description": "Learn new languages through daily challenges and real conversations.",
@@ -235,7 +235,7 @@
   },
   {
     "id": 14,
-    "image": "/assets/icons/shoply.png",
+    "image": "/assets/demo-app (5).webp",
     "title": "Shoply",
     "companyName": "RetailWave",
     "description": "Smart shopping assistant for deals, coupons, and product comparison.",
@@ -253,7 +253,7 @@
   },
   {
     "id": 15,
-    "image": "/assets/icons/mindly.png",
+    "image": "/assets/demo-app (6).webp",
     "title": "Mindly",
     "companyName": "CalmTech",
     "description": "Meditation and mindfulness app to reduce stress and improve sleep.",
